@@ -1,0 +1,126 @@
+.page {
+  --gray-rgb: 0, 0, 0;
+  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  padding: 24px;
+  width: 95vw;
+  height: 100%;
+  font-family: var(--font-geist-sans);
+  border-bottom: 0.1rem solid rgba(215, 221, 233, 1);
+  margin: 0px 30px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.modalNome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 286px;
+  filter: drop-shadow(rgba(16, 24, 40, 0.18));
+  z-index: 20;
+  gap: 32px;
+}
+
+.inputName {
+  border: 1px solid rgba(215, 221, 233, 1);
+  padding: 16px;
+  width: 386px;
+  height: 51px;
+  border-radius: 8px;
+}
+
+.titleName {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1); 
+}
+
+.btnEntrar {
+  background: linear-gradient(to right, rgba(7, 150, 211, 1), rgba(83, 192, 240, 1));
+  padding: 16px, 24px, 16px, 24px;
+  border: none;
+  border-radius: 8px;
+  width: 386px;
+  height: 51px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnEntrar:disabled {
+  background: linear-gradient(to right, rgb(203, 207, 209), rgb(195, 226, 240));
+  cursor: not-allowed;
+}
+
+.containerTarefas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  height: 446px;
+  border-radius: 16px;
+  border: 1px solid rgba(234, 236, 240, 1);
+  // color: rgba(255, 255, 255, 1);
+  padding: 32px;
+  gap: 24px;
+  margin: 7rem auto;
+}
+
+.buttonAddTask {
+  width: 450px;
+  height: 51px;
+  border-radius: 8px;
+  padding: 16px, 24px, 16px, 24px;
+  color: white;
+  background: linear-gradient(to right, rgba(7, 150, 211, 1), rgba(83, 192, 240, 1));
+  border: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 6rem;
+}
+
+.divFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
